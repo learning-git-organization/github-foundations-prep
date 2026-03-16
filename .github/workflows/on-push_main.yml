@@ -1,0 +1,12 @@
+name: on-push_main
+on:
+  push:
+    branches:
+      - main
+job:
+  show-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show info
+        run: |
+            echo "This workflow runs on push to the main branch."

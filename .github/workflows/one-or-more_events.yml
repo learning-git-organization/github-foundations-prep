@@ -6,4 +6,4 @@ jobs:
     steps:
       - name: info
         run: | 
-          echo "The event that triggered this workflow is ${{ github.event_name }}"s
+          echo "The event that triggered this workflow is ${{ github.event_name }}"

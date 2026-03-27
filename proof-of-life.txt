@@ -1,0 +1,39 @@
+ Administrator ~\desktop\git   09:23   in 1m38s815ms ❯ gh codespace create -R learning-git-organization/github-foundations-prep
+  ✓ Codespaces usage for this repository is paid for by dmistry1901-test
+? Choose Machine Type: 2 cores, 8 GB RAM, 32 GB storage
+psychic-acorn-5gwgw7rgg5j5h6qg
+
+ Administrator ~\desktop\git   09:24   in 6s726ms ❯ gh codespace list
+NAME                            DISPLAY NAME   REPOSITORY                                         BRANCH  STATE      CREATED AT
+psychic-acorn-5gwgw7rgg5j5h6qg  psychic acorn  learning-git-organization/github-foundations-prep  main    Available  about 1 minute ago
+
+ Administrator ~\desktop\git   09:25  ❯ gh codespace ssh -c psychic-acorn
+getting full codespace details: HTTP 404: Not Found (https://api.github.com/user/codespaces/psychic-acorn?internal=true&refresh=true)
+
+ Administrator ~\desktop\git   09:34  ❯ gh codespace ssh -c psychic-acorn-5gwgw7rgg5j5h6qg
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.8.0-1044-azure x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pr
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+@dmistry1901-test ➜ /workspaces/github-foundations-prep (main) $ uname -a
+Linux codespaces-1ca5d8 6.8.0-1044-azure #50~22.04.1-Ubuntu SMP Wed Dec  3 15:13:22 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+@dmistry1901-test ➜ /workspaces/github-foundations-prep (main) $ ls -la
+total 32
+drwxrwxrwx+ 6 codespace root 4096 Mar 27 03:54 .
+drwxr-xrwx+ 5 codespace root 4096 Mar 27 03:54 ..
+drwxrwxrwx+ 8 codespace root 4096 Mar 27 03:54 .git
+drwxrwxrwx+ 3 codespace root 4096 Mar 27 03:54 .github
+-rw-rw-rw-  1 codespace root   16 Mar 27 03:54 .gitignore
+-rw-rw-rw-  1 codespace root   76 Mar 27 03:54 README.md
+drwxrwxrwx+ 2 codespace root 4096 Mar 27 03:54 archived-actions
+drwxrwxrwx+ 2 codespace root 4096 Mar 27 03:54 learning-github.dev
